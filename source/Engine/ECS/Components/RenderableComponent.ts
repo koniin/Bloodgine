@@ -1,5 +1,5 @@
-import Component from './Component'
-import {IRenderable} from '../Graphics/IRenderer'
+import Component from '../Component'
+import {IRenderable} from '../../Graphics/IRenderer'
 import * as PIXI from 'pixi.js'
 
 abstract class RenderableComponent extends Component implements IRenderable {

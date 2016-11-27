@@ -1,4 +1,4 @@
-import RenderableComponent from '../RenderableComponent'
+import RenderableComponent from './RenderableComponent'
 import * as PIXI from 'pixi.js'
 
 export default class TextComponent extends RenderableComponent {

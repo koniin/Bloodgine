@@ -1,4 +1,4 @@
-import RenderableComponent from '../RenderableComponent'
+import RenderableComponent from './RenderableComponent'
 import {IRenderer} from '../../Graphics/IRenderer'
 import {Rectangle} from '../../Core/Rectangle'
 import * as PIXI from 'pixi.js'

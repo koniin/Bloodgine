@@ -1,11 +1,11 @@
 import GameCore from '../GameCore'
 import Entity from './Entity'
 import Component from './Component'
-import RenderableComponent from './RenderableComponent'
+import RenderableComponent from './Components/RenderableComponent'
 import TouchInputComponent from './Components/TouchInputComponent'
 import SpriteComponent from './Components/SpriteComponent'
 import {IRenderer} from '../Graphics/IRenderer'
-import InteractiveComponent from './InteractiveComponent'
+import InteractiveComponent from './Components/InteractiveComponent'
 import {GraphicsContainer} from '../Graphics/GraphicsContainer'
 
 export default class Scene {

@@ -4,7 +4,7 @@ export interface IPoolItem {
 }
 
 export class Pool<T extends IPoolItem> {
-    private items:T[];
+    private items:IPoolItem[];
 
     constructor(type?:{new():T;}, count?:number) {
         if(type && count) {
@@ -15,8 +15,8 @@ export class Pool<T extends IPoolItem> {
             this.items = [];
     }
     
-    get<T>(type:{new():T;}):T {
-        let item;
+    get<T>(type:{new():IPoolItem;}):any {
+        let item:IPoolItem;
         for(let i = 0; i < this.items.length; i++) {
             if(!this.items[i].active) {
                 item = this.items[i];

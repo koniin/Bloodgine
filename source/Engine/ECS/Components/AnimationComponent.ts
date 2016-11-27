@@ -1,4 +1,4 @@
-import RenderableComponent from '../RenderableComponent'
+import RenderableComponent from './RenderableComponent'
 import SpriteSheet from '../../Graphics/SpriteSheet'
 import Animation from  '../../Graphics/Animation'
 import {IRenderer} from '../../Graphics/IRenderer'

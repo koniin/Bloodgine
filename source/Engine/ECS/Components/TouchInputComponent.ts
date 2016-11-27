@@ -1,6 +1,6 @@
 import Component from '../Component'
-import RenderableComponent from '../RenderableComponent'
-import InteractiveComponent from '../InteractiveComponent'
+import RenderableComponent from './RenderableComponent'
+import InteractiveComponent from './InteractiveComponent'
 
 export default class TouchInputComponent extends InteractiveComponent  {
     constructor(onclick:Function, target?:RenderableComponent) {

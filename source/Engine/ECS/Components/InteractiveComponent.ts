@@ -1,7 +1,7 @@
 import RenderableComponent from './RenderableComponent'
-import Component from './Component'
-import {IInputListener} from '../Input/IInputListener'
-import {InputEvent, InputEventType} from '../Input/InputEvent'
+import Component from '../Component'
+import {IInputListener} from '../../Input/IInputListener'
+import {InputEvent, InputEventType} from '../../Input/InputEvent'
 
 export default class InteractiveComponent extends Component implements IInputListener {
     public target:RenderableComponent;
