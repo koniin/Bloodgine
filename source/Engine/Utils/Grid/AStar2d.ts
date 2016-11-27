@@ -21,7 +21,7 @@ function getHeap() {
   });
 }
 
-export var astar = {
+export var Astar = {
   /**
   * Perform an A* Search on a graph given a start and end node.
   * @param {Graph} graph
@@ -36,7 +36,7 @@ export var astar = {
   search: function(graph, start, end, options?) {
     graph.cleanDirty();
     options = options || {};
-    var heuristic = options.heuristic || astar.heuristics.manhattan;
+    var heuristic = options.heuristic || Astar.heuristics.manhattan;
     var closest = options.closest || false;
 
     var openHeap = getHeap();
@@ -165,14 +165,14 @@ export class Graph {
     init = function() {
         this.dirtyNodes = [];
         for (var i = 0; i < this.nodes.length; i++) {
-            astar.cleanNode(this.nodes[i]);
+            Astar.cleanNode(this.nodes[i]);
         }
     }
 
 
 cleanDirty = function() {
   for (var i = 0; i < this.dirtyNodes.length; i++) {
-    astar.cleanNode(this.dirtyNodes[i]);
+    Astar.cleanNode(this.dirtyNodes[i]);
   }
   this.dirtyNodes = [];
 };
