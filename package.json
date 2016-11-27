@@ -10,5 +10,15 @@
     "howler": "^2.0.1",
     "pixi.js": "^4.1.1",
     "tween.js": "^16.3.5"
-  }
+  },
+  "description": "Game engine or what?",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Henrik Länsman",
+  "license": "MIT"
 }
