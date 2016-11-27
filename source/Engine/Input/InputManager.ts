@@ -25,25 +25,6 @@ class DragState {
     }
 }
 
-        /*
-        basic click flow in Phaser:
-            - when interactive is set on a sprite a handler is attached that also registers itself in game interactive objects
- 
-            - click event is fired 
-            - calls move function with fromclick set to true
-                - move function updates the mouse location
-                - sets which mouse button is clicked from event data
-                - move function checks all registered objects and sets this.targetObject
-            - move function calls the click handler on the object
-            
-            - processInteractiveObjects calls swaptarget when it finds a target
-            - swaptarget calls pointerOver and pointer out depending on logic (https://github.com/photonstorm/phaser/blob/694debe94b26d88d88a0bffd4abce5572f1ffdda/src/input/Pointer.js)
-            
-            - move function calls all move callbacks on the object
-
-    */
-
-
 export class InputManager {
     private keys = [];
     private keysPressed = [];
