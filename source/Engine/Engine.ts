@@ -1,6 +1,8 @@
 export {default as GameCore} from './GameCore'
 export {IRenderer as Renderer, IRenderable} from './Graphics/IRenderer'
 export {default as SpriteSheet} from './Graphics/SpriteSheet'
+export {default as Animation} from './Graphics/Animation'
+export {Camera} from './Graphics/Camera'
 export {default as Scene} from './ECS/Scene'
 export {default as Entity} from './ECS/Entity'
 export {default as Component} from './ECS/Component'
@@ -24,12 +26,12 @@ export {Grid2d, GridDebugRenderer} from './Utils/Grid/Grid2d'
 export {TiledMap} from './Utils/TiledMap'
 export {Lights, Light, LightType} from './Graphics/Lighting'
 
-// Core
-export * from './Core/Performance'
-export {Pool} from './Core/Pool'
-export {default as Vector2} from './Core/Vector2'
-export {Rectangle} from './Core/Rectangle'
-export {Circle} from './Core/Circle'
+export * from './Utils/Noise/NoiseMap'
+export * from './Utils/Noise/ParkMillerPrng'
+export * from './Utils/Noise/SimplexNoise'
+
+import * as Core from "./Core/Core"
+export {Core}
 
 import * as UI from "./UI/UI";
 export {UI}

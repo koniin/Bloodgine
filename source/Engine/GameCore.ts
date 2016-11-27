@@ -78,17 +78,12 @@ export default class GameCore {
         this.statCounter.fpsCount = 0;
     }
 
-    // Override to use an element on the page or whatever you want
-    protected setCanvas():HTMLCanvasElement {
-        return this.renderer.createDefault();
-    }
-
     public createScene():Scene {
         return new Scene(this);
     }
 
     run() {
-        this.renderer.initialize(this.setCanvas());
+        this.renderer.initialize();
         this.input.registerEventHandlers(this.renderer.canvas);
         this.resolution.initialize(this.renderer);
         this.initialize();

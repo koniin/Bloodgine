@@ -13,7 +13,6 @@ export class PixiRenderer implements IRenderer {
     private containerId:string;
     private canvasId:string;
 
-    // New code.
     readonly defaultWidth:number = 640;
     readonly defaultHeight:number = 360;
     renderer:PIXI.CanvasRenderer | PIXI.WebGLRenderer;
@@ -23,15 +22,7 @@ export class PixiRenderer implements IRenderer {
         this.camera = new Camera();
     }
 
-    public initialize(canvas:HTMLCanvasElement) {
-        this.canvas = canvas;
-        this.root = new PIXI.Container();
-        this.ctx = undefined; // not supposed to be used
-        this.width = this.camera.width = this.canvas.width;
-        this.height = this.camera.height = this.canvas.height;
-    }
-
-    public createDefault():HTMLCanvasElement {
+    public initialize() {
         PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
         //this.renderer.roundPixels = true
         this.renderer = PIXI.autoDetectRenderer(this.defaultWidth, this.defaultHeight);
@@ -44,9 +35,14 @@ export class PixiRenderer implements IRenderer {
         canvas.setAttribute("id", this.canvasId);
         canvasContainer.appendChild(canvas);
         document.body.appendChild(canvasContainer);
-        return canvas;
+
+        this.canvas = canvas;
+        this.root = new PIXI.Container();
+        this.ctx = undefined; // not supposed to be used
+        this.width = this.camera.width = this.canvas.width;
+        this.height = this.camera.height = this.canvas.height;
     }
-    
+
     createRenderTexture(width:number, height:number, displayObject:PIXI.DisplayObject):PIXI.RenderTexture { 
         let texture = PIXI.RenderTexture.create(width, height);
         this.renderer.render(displayObject, texture);

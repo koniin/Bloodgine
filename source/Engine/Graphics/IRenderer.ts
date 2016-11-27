@@ -15,8 +15,7 @@ export interface IRenderer {
     canvas:HTMLCanvasElement;
     ctx:CanvasRenderingContext2D;
     setBackgroundColor(color:number):void;
-    initialize(canvas:HTMLCanvasElement):void;
-    createDefault():HTMLCanvasElement;
+    initialize():void;
     setFilter(filter:any);
     removeFilters();
     begin():void;
