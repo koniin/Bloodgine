@@ -29,7 +29,7 @@ export {Effect} from './Utils/SpellSystem/Effect'
 export {IFilter, TargetFilter} from './Utils/SpellSystem/TargetFilter'
 export {ITargetPicker} from './Utils/SpellSystem/TargetPicker'
 
-import * as ECS from "./ECS/Ecs"
+import * as ECS from "./ECS/ECS"
 export {ECS}
 
 import * as Core from "./Core/Core"
