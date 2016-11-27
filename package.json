@@ -1,6 +1,6 @@
 {
   "name": "bloodgine",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "lib/Engine.js",
   "typings": "lib/Engine",
   "files": [
