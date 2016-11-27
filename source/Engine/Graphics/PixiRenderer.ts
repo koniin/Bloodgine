@@ -23,7 +23,6 @@ export class PixiRenderer implements IRenderer {
     }
 
     public initialize() {
-        PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.NEAREST;
         //this.renderer.roundPixels = true
         this.renderer = PIXI.autoDetectRenderer(this.defaultWidth, this.defaultHeight);
         this.renderer.backgroundColor = 0x061639;
