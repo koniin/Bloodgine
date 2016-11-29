@@ -1,12 +1,17 @@
 {
   "name": "bloodgine",
-  "version": "0.1.8",
+  "description": "Simple game engine/library for HTML5 or Electron games written in Typescript.",
+  "version": "0.1.9",
   "main": "lib/Engine.js",
   "homepage": "https://github.com/koniin/Bloodgine",
   "repository": {
     "type": "git",
     "url": "https://github.com/koniin/Bloodgine.git"
   },
+  "keywords": [
+    "game",
+    "engine"	
+  ],
   "typings": "lib/Engine",
   "files": [
     "lib/"
@@ -16,7 +21,6 @@
     "pixi.js": "^4.1.1",
     "tween.js": "^16.3.5"
   },
-  "description": "Game engine or what?",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
