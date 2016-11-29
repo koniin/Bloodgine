@@ -2,6 +2,11 @@
   "name": "bloodgine",
   "version": "0.1.7",
   "main": "lib/Engine.js",
+  "homepage": "https://github.com/koniin/Bloodgine",
+  "repository" : { 
+	"type" : "git", 
+	"url" : "https://github.com/koniin/Bloodgine.git"
+  },
   "typings": "lib/Engine",
   "files": [
     "lib/"
